@@ -1,6 +1,6 @@
-# v1-interface
+# Marginal Interface
 
-Marginal V1 Interface web app.
+Marginal Web App
 
 ## Installation
 
