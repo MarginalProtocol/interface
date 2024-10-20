@@ -1,0 +1,13 @@
+{
+  "short_name": "Marginal",
+  "name": "Marginal",
+  "icons": [
+    {
+      "src": "marginal.svg",
+      "sizes": "48x24",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}

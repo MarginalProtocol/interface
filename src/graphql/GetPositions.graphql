@@ -1,0 +1,40 @@
+query GetPositions($address: ID!) {
+  positions(where: { owner: $address }) {
+    id
+    tokenId
+    positionId
+    owner
+    initialMargin
+    initialSqrtPriceX96After
+    margin
+    marginAmountOut
+    zeroForOne
+    pool {
+      id
+      address
+      tokenPair
+      oracle
+      maintenance
+      token0 {
+        id
+        address
+        symbol
+        name
+        decimals
+      }
+      token1 {
+        id
+        address
+        symbol
+        name
+        decimals
+      }
+    }
+    blockNumber
+    timestamp
+    isLiquidated
+    isSettled
+    isClosed
+    rewards
+  }
+}

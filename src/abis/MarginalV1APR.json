@@ -1,0 +1,77 @@
+[
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_factory", "type": "address" },
+      { "internalType": "address", "name": "_WETH9", "type": "address" },
+      { "internalType": "address", "name": "_multiRewardsFactory", "type": "address" }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  { "inputs": [], "name": "InvalidPool", "type": "error" },
+  { "inputs": [], "name": "InvalidTokens", "type": "error" },
+  { "inputs": [], "name": "MultiRewardsNotInitialized", "type": "error" },
+  { "inputs": [], "name": "MultiRewardsNotSupplied", "type": "error" },
+  { "inputs": [], "name": "PoolNotInitialized", "type": "error" },
+  {
+    "inputs": [],
+    "name": "WETH9",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factory",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "multiRewardsFactory",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "stakingToken", "type": "address" },
+      { "internalType": "address", "name": "rewardsToken", "type": "address" },
+      { "internalType": "address", "name": "rewardsPoolWithWETH9", "type": "address" },
+      { "internalType": "uint32", "name": "duration", "type": "uint32" }
+    ],
+    "name": "quotePercentageRate",
+    "outputs": [{ "internalType": "uint256", "name": "rate", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "pool", "type": "address" },
+      { "internalType": "uint256", "name": "shares", "type": "uint256" }
+    ],
+    "name": "quotePoolTokenInWETH9",
+    "outputs": [{ "internalType": "uint256", "name": "value", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "pool", "type": "address" },
+      { "internalType": "address", "name": "token", "type": "address" },
+      { "internalType": "uint128", "name": "amount", "type": "uint128" }
+    ],
+    "name": "quoteRewardInWETH9",
+    "outputs": [{ "internalType": "uint256", "name": "value", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "uniswapV3Factory",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

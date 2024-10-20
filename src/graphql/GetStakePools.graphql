@@ -1,0 +1,8 @@
+query GetStakePools($factoryId: ID!) {
+  multiRewardsFactory(id: $factoryId) {
+    id
+    stakePools {
+      id
+    }
+  }
+}

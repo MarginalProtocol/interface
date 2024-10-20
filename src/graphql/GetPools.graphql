@@ -1,0 +1,36 @@
+query GetPools {
+  pools {
+    id
+    factory {
+      id
+    }
+    tokenPair
+    oracle
+    createdAtTimestamp
+    createdAtBlockNumber
+    token0 {
+      id
+      address
+      symbol
+      name
+      decimals
+    }
+    token1 {
+      id
+      address
+      symbol
+      name
+      decimals
+    }
+    decimals
+    maintenance
+    fee
+    stakePool {
+      id
+      stakeToken
+      multiRewardsFactory {
+        id
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "Inter";
+  src: url("../public/fonts/Inter-VariableFont.ttf");
+}
+
+@font-face {
+  font-family: "PP Fraktion Mono";
+  src: url("../public/fonts/PP\ Fraktion\ Mono-Variable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PP Fraktion Mono";
+  src: url("../public/fonts/PP\ Fraktion\ Mono-Variable.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PP Fraktion Mono";
+  src: url("../public/fonts/PP\ Fraktion\ Mono-Variable.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "PP Fraktion Mono";
+  src: url("../public/fonts/PP\ Fraktion\ Mono-Variable.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "PP Fraktion Mono";
+  src: url("../public/fonts/PP\ Fraktion\ Mono-Variable.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Monument";
+  font-weight: 300;
+  src: url("../public/fonts/PPMonumentExtended-Light.otf");
+}
+
+@font-face {
+  font-family: "Monument";
+  font-weight: 400;
+  src: url("../public/fonts/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+  font-family: "Monument";
+  font-weight: 800;
+  src: url("../public/fonts/MonumentExtended-Ultrabold.otf");
+}
+
+@font-face {
+  font-family: "Monument";
+  font-weight: 900;
+  src: url("../public/fonts/PPMonumentExtended-Black.otf");
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #222222;
+  font-family: "PP Fraktion Mono", "monaco", "monospace";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}

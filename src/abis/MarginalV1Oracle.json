@@ -1,0 +1,97 @@
+[
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_factory", "type": "address" },
+      { "internalType": "address", "name": "_WETH9", "type": "address" },
+      { "internalType": "address", "name": "_manager", "type": "address" }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  { "inputs": [], "name": "PoolInactive", "type": "error" },
+  { "inputs": [], "name": "T", "type": "error" },
+  {
+    "inputs": [],
+    "name": "WETH9",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factory",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "bool", "name": "zeroForOne", "type": "bool" },
+      { "internalType": "uint128", "name": "size", "type": "uint128" },
+      { "internalType": "uint128", "name": "debt", "type": "uint128" },
+      { "internalType": "uint128", "name": "margin", "type": "uint128" },
+      { "internalType": "uint24", "name": "maintenance", "type": "uint24" }
+    ],
+    "name": "liquidationSqrtPriceX96",
+    "outputs": [{ "internalType": "uint160", "name": "", "type": "uint160" }],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "uint256", "name": "tokenId", "type": "uint256" }],
+    "name": "liquidationSqrtPriceX96",
+    "outputs": [{ "internalType": "uint160", "name": "", "type": "uint160" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "manager",
+    "outputs": [
+      {
+        "internalType": "contract INonfungiblePositionManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "bytes[]", "name": "data", "type": "bytes[]" }],
+    "name": "multicall",
+    "outputs": [{ "internalType": "bytes[]", "name": "results", "type": "bytes[]" }],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          { "internalType": "address", "name": "token0", "type": "address" },
+          { "internalType": "address", "name": "token1", "type": "address" },
+          { "internalType": "uint24", "name": "maintenance", "type": "uint24" },
+          { "internalType": "address", "name": "oracle", "type": "address" }
+        ],
+        "internalType": "struct PoolAddress.PoolKey",
+        "name": "poolKey",
+        "type": "tuple"
+      }
+    ],
+    "name": "sqrtPricesX96",
+    "outputs": [
+      { "internalType": "uint160", "name": "sqrtPriceX96", "type": "uint160" },
+      { "internalType": "uint160", "name": "oracleSqrtPriceX96", "type": "uint160" },
+      { "internalType": "uint256", "name": "fundingRatioX96", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "uniswapV3Factory",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
